@@ -1,12 +1,10 @@
 package dev.lcx06.t1_pm
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import dev.lcx06.t1_pm.databinding.ActivityMainBinding
 
 class Activity2 : AppCompatActivity() {
@@ -26,8 +24,6 @@ class Activity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         Log.d("onCreate", "$onCreate")
-        this.addListenerToEditText()
-        this.addListenerToTextView()
     }
 
     override fun onStart() {
@@ -75,6 +71,7 @@ class Activity2 : AppCompatActivity() {
         Log.d("onSaveInstanceState", outState.toString())
     }
 
+
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
 
@@ -88,30 +85,5 @@ class Activity2 : AppCompatActivity() {
         }
 
         Log.d("onRestoreInstanceState", savedInstanceState.toString())
-    }
-
-    private fun addListenerToEditText() {
-        binding.editTextTextPersonName.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                Log.d("beforeTextChanged", s.toString())
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                Log.d("onTextChanged", s.toString())
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                Log.d("afterTextChanged", s.toString())
-                binding.editTextTextPersonName2.text = binding.editTextTextPersonName.text
-            }
-        })
-    }
-
-    private fun addListenerToTextView() {
-        binding.textView.setOnLongClickListener {
-            Toast.makeText(this, "Transformando texto a mayuscula", Toast.LENGTH_LONG).show()
-            binding.editTextTextPersonName.setText(binding.editTextTextPersonName.text.toString().toUpperCase())
-            true
-        }
     }
 }

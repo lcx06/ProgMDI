@@ -10,8 +10,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:hint="Name"
             android:ems="10"
+            android:tag="Primer campo"
             android:id="@+id/editTextTextPersonName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -22,7 +23,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:hint="Name"
+            android:tag="Segundo campo"
             android:ems="10"
             android:id="@+id/editTextTextPersonName2"
             android:layout_marginTop="16dp"
@@ -31,7 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-            android:text="Test"
+            android:text="N/A"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -45,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
+            android:tag="Boton principal"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
