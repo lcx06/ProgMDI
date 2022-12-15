@@ -20,9 +20,13 @@ s
 Capp/src/androidTest/java/dev/lcx06/t1_pm/ExampleInstrumentedTest.kt,f\b\fbaebf68c03190af984ff67559b6407b3755dad4
 d
 4app/src/test/java/dev/lcx06/t1_pm/ExampleUnitTest.kt,8\6\863760ecb9cd45d73ede01bf52bd732c935604e6
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 a
 1app/src/main/java/dev/lcx06/t1_pm/MainActivity.kt,b\7\b725780f83404b8aff147e9823819b9e097585e4
+^
+.app/src/main/java/dev/lcx06/t1_pm/Activity2.kt,1\f\1f34046c9af601fd006868f97b74acc7ffff4785
+^
+.app/src/main/java/dev/lcx06/t1_pm/Activity3.kt,6\9\69d1268692ae1abbd7a68e15a64c42aafffe6c3b
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
