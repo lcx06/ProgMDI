@@ -28,3 +28,5 @@ a
 .app/src/main/java/dev/lcx06/t1_pm/Activity2.kt,1\f\1f34046c9af601fd006868f97b74acc7ffff4785
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+^
+.app/src/main/java/dev/lcx06/t1_pm/Activity4.kt,1\6\16ce1d2950b0e26a5375a59dcddc1a473d67e990
